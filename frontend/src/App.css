@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#Registration{
+  margin-top:2vh;
+}
+
+#Sidebar {
+  width: 13vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+#Home {
+  width: 100%;
+  margin-left: 13vw;
+  padding: 2vh;
+}
+
+#Details {
+  width: 100%;
+  margin-left: 13vw;
+}
