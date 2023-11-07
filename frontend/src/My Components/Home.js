@@ -20,7 +20,7 @@ function Home(props) {
   }
 
   const update = async (val) => {
-    await fetch("http://localhost:5000/owner_data", {
+    await fetch("https://decentralized-application.onrender.com/owner_data", {
             method: "POST",
             body: JSON.stringify(val),
             headers: {

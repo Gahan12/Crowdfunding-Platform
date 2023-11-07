@@ -25,7 +25,7 @@ const RegistrationForm = (props) => {
         })
       if (flag) {
         window.location.pathname = '/login';
-          const response = await fetch("http://localhost:5000/register", {
+          const response = await fetch("https://decentralized-application.onrender.com/register", {
             method: "POST",
             body: JSON.stringify(formValues),
             headers: {

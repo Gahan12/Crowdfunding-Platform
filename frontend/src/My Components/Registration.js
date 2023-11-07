@@ -23,7 +23,7 @@ function Registration(props) {
 
   const handleSubmit = async (e) => {
     if (props.data.deploy === false) {
-      const response = await fetch("http://localhost:5000/owner", {
+      const response = await fetch("https://decentralized-application.onrender.com/owner", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

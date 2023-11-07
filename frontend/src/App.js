@@ -12,7 +12,6 @@ import Login from './My Components/login';
 import RegistrationForm from './My Components/Register';
 import Success from './My Components/Success_data';
 
-
 function App() {
 
   const getLoaclitems = () => {
@@ -46,7 +45,7 @@ function App() {
   const [owners, setOwners] = useState([]);
 
   const getUser = async() => {
-    let response = await fetch('http://localhost:5000/register', {
+    let response = await fetch('https://decentralized-application.onrender.com/register', {
       method: "GET"
     });
     const result = await response.json();
@@ -54,7 +53,7 @@ function App() {
   }  
 
   const getOwners = async () => {
-    const response = await fetch('http://localhost:5000/owner', {
+    const response = await fetch('https://decentralized-application.onrender.com/owner', {
       method: 'GET',
     });
     const result = await response.json();
